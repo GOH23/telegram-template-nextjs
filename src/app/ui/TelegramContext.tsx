@@ -4,9 +4,11 @@ import { createContext } from "react"
 
 const tg = window.Telegram
 type TelegramContextType = {
-    Telegram?: Telegram
+    Telegram: Telegram
 }
-export var TelegramContext = createContext<TelegramContextType>({})
+export var TelegramContext = createContext<TelegramContextType>({
+    Telegram: tg
+})
 export default function TelegramProvider({
     children,
 }: Readonly<{
