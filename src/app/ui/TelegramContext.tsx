@@ -6,7 +6,7 @@ const tg = window.Telegram
 type TelegramContextType = {
     Telegram?: Telegram
 }
-var TelegramContext = createContext<TelegramContextType>({})
+export var TelegramContext = createContext<TelegramContextType>({})
 export default function TelegramProvider({
     children,
 }: Readonly<{
