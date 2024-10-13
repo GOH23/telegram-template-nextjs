@@ -6,7 +6,7 @@ export function HomePage(){
     const {WebApp} = useTelegram();
     return (
         <main>
-          <p>{WebApp?.platform}</p>
+          <p>{WebApp.platform}</p>
         </main>
       );
 }

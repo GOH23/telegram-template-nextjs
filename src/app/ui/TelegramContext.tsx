@@ -2,12 +2,12 @@
 
 import { createContext } from "react"
 
-const tg = window.Telegram
+const tg = window.Telegram.WebApp
 type TelegramContextType = {
-    Telegram: Telegram
+    Telegram: WebApp | undefined
 }
 export var TelegramContext = createContext<TelegramContextType>({
-    Telegram: tg
+    Telegram: undefined
 })
 export default function TelegramProvider({
     children,

@@ -5,6 +5,6 @@ import {TelegramContext} from "./TelegramContext"
 export function useTelegram(){
     const {Telegram} = useContext(TelegramContext)
     return {
-        WebApp: Telegram?.WebApp
+        WebApp: Telegram!
     }
 }
