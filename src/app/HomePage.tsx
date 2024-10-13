@@ -6,7 +6,7 @@ export function HomePage(){
     const {WebApp} = useTelegram();
     return (
         <main>
-          <p>{WebApp?.initDataUnsafe.user?.first_name}</p>
+          <p>{JSON.stringify(WebApp?.initDataUnsafe.user)}</p>
         </main>
       );
 }
