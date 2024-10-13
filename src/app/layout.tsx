@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import dynamic from "next/dynamic";
+import Script from "next/script";
 
 
 
@@ -17,6 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Script
+        src="https://telegram.org/js/telegram-web-app.js" strategy="beforeInteractive"
+      />
+
       <body>
         <TelegramProvider>
           {children}
