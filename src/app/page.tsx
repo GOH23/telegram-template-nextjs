@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <main>
-      <p>{Telegram?.WebApp.initDataUnsafe.user?.first_name}</p>
+      <p>Привет</p>
     </main>
   );
 }
